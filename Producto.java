@@ -1,7 +1,4 @@
-
 import java.util.Map;
-
-
 
 public class Producto {
     private String sku;
