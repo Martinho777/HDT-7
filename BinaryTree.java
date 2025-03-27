@@ -29,7 +29,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
         } else if (comparacion > 0) {
             actual.derecho = insertarRec(actual.derecho, clave, valor);
         } else {
-            // Si la clave ya existe, actualizamos el valor
+            // Si ya existe actualizamos el valor
             actual.valor = valor;
         }
 
@@ -52,7 +52,7 @@ public class BinaryTree<K extends Comparable<K>, V> {
         return null; // no encontrado
     }
 
-    // Recorrido in-order
+    // Recorrido inorder
     public void inOrder() {
         inOrderRec(raiz);
     }
