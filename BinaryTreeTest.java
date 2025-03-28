@@ -26,5 +26,13 @@ public class BinaryTreeTest {
 
         assertNull(arbol.buscar("999")); // no existe
     }
+
+    @Test
+    public void testReemplazoValor() {
+        arbol.insertar("001", "Producto antiguo");
+        arbol.insertar("001", "Producto actualizado");
+
+        assertEquals("Producto actualizado", arbol.buscar("001"));
+    }
    
 }
