@@ -20,5 +20,11 @@ public class BinaryTreeTest {
         assertEquals("Camiseta técnica", arbol.buscar("002"));
     }
 
+    @Test
+    public void testBuscarInexistente() {
+        arbol.insertar("001", "Zapatos deportivos");
+
+        assertNull(arbol.buscar("999")); // no existe
+    }
    
 }
